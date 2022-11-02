@@ -1,0 +1,350 @@
+body {
+    background-image: url(walls/Zed.png);
+    background-size: cover;
+    background-position: 90% center;
+    background-attachment: fixed;
+}
+
+.description {
+    font-size: 1.1em;
+    color: var(--black);
+    transition: .3s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.lbl-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    user-select: none;
+}
+
+.lbl-menu .roles {
+    max-width: 800px;
+    width: 100%;
+    height: 50px;
+    margin-right: 5px;
+}
+
+.lbl-menu .roles span {
+    display: none;
+}
+
+.lbl-menu nav.roles-label {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.lbl-menu nav.roles-label label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    cursor: url(hand.png), auto;
+    color: var(--black);
+    border-radius: 8px;
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+    transition: .3s ease;
+}
+
+.lbl-menu nav.roles-label label img {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#all:checked ~ .lbl-menu nav.roles-label label.all,
+#baron:checked ~ .lbl-menu nav.roles-label label.baron,
+#jungle:checked ~ .lbl-menu nav.roles-label label.jungle,
+#mid:checked ~ .lbl-menu nav.roles-label label.mid,
+#adc:checked ~ .lbl-menu nav.roles-label label.adc,
+#support:checked ~ .lbl-menu nav.roles-label label.support {
+    color: #fff;
+}
+
+.lbl-menu nav.roles-label .slider {
+    position: absolute;
+    height: 100%;
+    width: calc(100% / 6);
+    background: linear-gradient(45deg, #00c6ff, #009dff);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    z-index: 0;
+    left: -100%;
+    bottom: 0;
+    transition: .3s ease;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -ms-transition: .3s ease;
+    -o-transition: .3s ease;
+}
+
+#all:checked ~ .lbl-menu nav.roles-label .slider {
+    left: 0;
+}
+#baron:checked ~ .lbl-menu nav.roles-label .slider {
+    left: calc(100% / 6);
+}
+#jungle:checked ~ .lbl-menu nav.roles-label .slider {
+    left: calc(100% / 6 * 2);
+}
+#mid:checked ~ .lbl-menu nav.roles-label .slider {
+    left: calc(100% / 6 * 3);
+}
+#adc:checked ~ .lbl-menu nav.roles-label .slider {
+    left: calc(100% / 6 * 4);
+}
+#support:checked ~ .lbl-menu nav.roles-label .slider {
+    left: calc(100% / 6 * 5);
+}
+
+#all:checked ~ .tab-content .card,
+#baron:checked ~ .tab-content .baron,
+#jungle:checked ~ .tab-content .jungle,
+#mid:checked ~ .tab-content .mid,
+#adc:checked ~ .tab-content .adc,
+#support:checked ~ .tab-content .support {
+    display: flex;
+}
+
+.tab-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.tab-content .tier {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    overflow: hidden;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content .tier .letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100px;
+    padding: 20px 0;
+}
+
+.tab-content .tiersplus .letter {
+    background: #ff0000;
+}
+
+.tab-content .tiers .letter {
+    background: #ff9d00;
+}
+
+.tab-content .tieraplus .letter {
+    background: #fff500;
+}
+
+.tab-content .tiera .letter {
+    background: #31ff00;
+}
+
+.tab-content .tierb .letter {
+    background: #00fff5;
+}
+
+.tab-content .tierc .letter {
+    background: #004eff;
+}
+
+.tab-content .tierd .letter {
+    background: #6c00ff;
+}
+
+.tab-content .tier .letter span {
+    color: #fff;
+    font-size: 3em;
+    font-family: 'Kaushan Script', cursive;
+    font-weight: 600;
+}
+
+.tab-content .tier .tier-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.tab-content .front,
+.tab-content .front img,
+.tab-content .front h4,
+.tab-content .front .tierimg {
+    cursor: url(hand.png), auto;
+    color: var(--black);
+    transition: .3s;
+}
+
+.tab-content .card {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.tab-content .front {
+    position: relative;
+    width: 100px;
+    height: 100%;
+    z-index: 1;
+}
+
+.tab-content .front a > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 5px;
+}
+
+.tab-content .front .tierimg {
+    position: absolute;
+    top: 90px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: linear-gradient(45deg, #00c6ff, #009dff);
+    transform: translate(-50%, -50%);
+}
+
+.tab-content .front .tierimg img {
+    width: 20px;
+    height: 20px;
+}
+
+@media (max-width: 858px) {
+    .lbl-menu .roles {
+        position: relative;
+        display: flex;
+        width: 100%;
+    }
+
+    .lbl-menu .roles span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        cursor: url(hand.png), auto;
+        color: var(--black);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+        padding: 10px 20px;
+        transition: .3s;
+    }
+
+    .lbl-menu span ion-icon {
+        font-size: 1em;
+        margin-left: 5px;
+        transition: .15s;
+    }
+
+    .lbl-menu .roles nav.roles-label {
+        position: absolute;
+        top: 40px;
+        left: 0;
+        width: 100%;
+        height: auto;
+        padding: 30px 10px 10px;
+        display: block;
+        text-align: center;
+        background: var(--white);
+        border: 1px solid rgba(0, 0, 0, 0.2);
+        border-top: 1px solid var(--white);
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-15px);
+        z-index: 100;
+        transition: .3s;
+    }
+
+    .lbl-menu .roles span.active ~ nav.roles-label {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+
+    .lbl-menu .roles span.active ion-icon {
+        transform: rotate(180deg);
+    }
+
+    .lbl-menu nav.roles-label label {
+        display: inline-block;
+        height: auto;
+    }
+
+    .lbl-menu nav.roles-label label img {
+        display: none;
+    }
+    
+    .lbl-menu nav.roles-label .slider {
+        max-width: 110px;
+        width: calc(100% - 20px);
+        height: 50px;
+        left: -200%;
+        bottom: 10px;
+        transform: translate(-50%, 0);
+    }
+    
+    #all:checked ~ .lbl-menu nav.roles-label .slider {
+        top: 30px;
+        left: 50%;
+    }
+    #baron:checked ~ .lbl-menu nav.roles-label .slider {
+        top: calc((100% - 40px) / 6 + 30px);
+        left: 50%;
+    }
+    #jungle:checked ~ .lbl-menu nav.roles-label .slider {
+        top: calc((100% - 40px) / 6 * 2 + 30px);
+        left: 50%;
+    }
+    #mid:checked ~ .lbl-menu nav.roles-label .slider {
+        top: calc((100% - 40px) / 6 * 3 + 30px);
+        left: 50%;
+    }
+    #adc:checked ~ .lbl-menu nav.roles-label .slider {
+        top: calc((100% - 40px) / 6 * 4 + 30px);
+        left: 50%;
+    }
+    #support:checked ~ .lbl-menu nav.roles-label .slider {
+        top: calc((100% - 40px) / 6 * 5 + 30px);
+        left: 50%;
+    }
+}

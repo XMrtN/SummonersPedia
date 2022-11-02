@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Mundo, el Loco de Zaun</title>
+    <link rel="stylesheet" href="champ.css">
+    <link rel="stylesheet" href="../nav.css">
+    <link rel="icon" type="image/png" href="../Wild_Rift_icon.png">
+</head>
+<body id="home" style="background-image: url(../walls/images/drmundo_skin01.jpg); background-position: 80% center;">
+    <header>
+        <div class="left">
+            <a class="myAccount" href="../myAccount.html"><ion-icon name="person-circle-outline"></ion-icon></a>
+            <a href="#home" class="logo">Summoner's<span>pedia</span></a>
+        </div>
+        <div class="right">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="../index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="../tuto.html">Tutorial</a>
+                    </li>
+                    <li>
+                        <a href="../champs.html">Campeones</a>
+                    </li>
+                    <li>
+                        <a href="../tierlist.html">Tier List</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="rightside">
+                <div class="btns menutoggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="btns daynight">
+                    <ion-icon name="moon-outline"></ion-icon>
+                    <ion-icon name="sunny-outline"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    <section class="background">
+        <div class="video">
+            <video autoplay muted loop src="../walls/video/drmundo_turntable_1_20.mp4" type="video/mp4"></video>
+            <div class="title">
+                <h2>
+                    <span class="typing"></span>
+                </h2>
+            </div>
+        </div>
+        
+        <div class="imgBtn">
+            <ion-icon name="videocam-outline"></ion-icon>
+            <ion-icon name="videocam-off-outline"></ion-icon>
+        </div>
+        <div class="scrolldown">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+    
+    <section class="section">
+        <div class="container">
+            <div class="des-container">
+                <div class="description">
+                    <div class="rol">
+                        <div class="img1">
+                            <img src="../roles/fighter_icon.png" alt="">
+                            <p>
+                                Peleador
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                                /
+                            </p>
+                        </div>
+                        <div class="img2">
+                            <img src="../roles/tank_icon.png" alt="">
+                            <p>
+                                Tanque
+                            </p>
+                        </div>
+                    </div>
+                    <div class="difficult">
+                        <p>
+                            Dificultad Baja
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2 class="abilities">
+                HABILIDADES
+            </h2>
+            <div class="lbl-menu">
+                <ul>
+                    <li data-tab-target="#ability0" class="active">
+                        <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltcbcab66437516b5f/5f7f712a8becd30f135cba49/drmundo_0.jpg" alt="">
+                    </li>
+                    <li data-tab-target="#ability1">
+                        <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt9371dd428a3f1baa/5f7f712d6055b40f59139057/drmundo_1.jpg" alt="">
+                    </li>
+                    <li data-tab-target="#ability2">
+                        <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/bltfafb299dfe7f6cd3/5f7f7130fcce2d0edc77b36f/drmundo_2.jpg" alt="">
+                    </li>
+                    <li data-tab-target="#ability3">
+                        <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt8ae3c4710d394a89/5f7f7134d0efe10f4e2d43c8/drmundo_3.jpg" alt="">
+                    </li>
+                    <li data-tab-target="#ability4">
+                        <img src="https://images.contentstack.io/v3/assets/blt370612131b6e0756/blt34a78c8cbd61a439/5f7f7138b0ebb60f03a114eb/drmundo_4.jpg" alt="">
+                    </li>
+                </ul>
+            </div>
+            <div class="tab-content">
+                <div id="ability0" data-tab-content class="active">
+                    <div class="ability-description">
+                        <h4>
+                            PASIVA • DESCARGA DE ADRENALINA
+                        </h4>
+                        <p>
+                            Dr. Mundo regenera un 1% de su Vida Máxima cada seg.
+                        </p>
+                    </div>
+                    <video autoplay muted loop src="https://assets.contentstack.io/v3/assets/blt370612131b6e0756/bltab7daf71fb1f2fd0/5f7f712b8ebedd0f2d2c3205/drmundo_ability_passive_1_1.mp4"></video>
+                </div>
+                <div id="ability1" data-tab-content>
+                    <div class="ability-description">
+                        <h4>
+                            1 • CUCHILLA INFECTADA
+                        </h4>
+                        <p>
+                            Dr. Mundo arroja su cuchilla, lo que inflige daño igual a un porcentaje de la vida actual de su objetivo y lo ralentiza durante un breve periodo. Dr. Mundo se deleita con el sufrimiento de los demás, por lo que recupera un porcentaje del costo de vida cuando conecta una cuchilla (se duplica en golpes finales).
+                        </p>
+                    </div>
+                    <video autoplay muted loop src="https://assets.contentstack.io/v3/assets/blt370612131b6e0756/blt3801167bf3a4f795/5f7f712e78777e0edb315ae4/drmundo_ability_1_1_1.mp4"></video>
+                </div>
+                <div id="ability2" data-tab-content>
+                    <div class="ability-description">
+                        <h4>
+                            2 • ARDIENTE AGONÍA
+                        </h4>
+                        <p>
+                            Dr. Mundo drena su propia vida para reducir la duración de las inhabilitaciones e infligir daño continuo a los enemigos cercanos.
+                        </p>
+                    </div>
+                    <video autoplay muted loop src="https://assets.contentstack.io/v3/assets/blt370612131b6e0756/blt61906c9cdc5c0839/5f7f713290a4e40f544d7001/drmundo_ability_2_1_1.mp4"></video>
+                </div>
+                <div id="ability3" data-tab-content>
+                    <div class="ability-description">
+                        <h4>
+                            3 • MASOQUISMO
+                        </h4>
+                        <p>
+                            Dr. Mundo obtiene daño de ataque adicional según su vida faltante y su siguiente ataque básico le da un cabezazo a su objetivo, lo que inflige daño adicional. Aumenta la resistencia mágica de manera pasiva cuando Dr. Mundo recibe daño mágico o paga un costo de vida.
+                        </p>
+                    </div>
+                    <video autoplay muted loop src="https://assets.contentstack.io/v3/assets/blt370612131b6e0756/blt075521279efc030b/5f7f713678777e0edb315ae8/drmundo_ability_3_1_1.mp4"></video>
+                </div>
+                <div id="ability4" data-tab-content>
+                    <div class="ability-description">
+                        <h4>
+                            DEFINITIVA • SADISMO
+                        </h4>
+                        <p>
+                            El Dr. Mundo sacrifica una parte de su vida para aumentar su velocidad de movimiento y regeneración de vida de forma drástica.
+                        </p>
+                    </div>
+                    <video autoplay muted loop src="https://assets.contentstack.io/v3/assets/blt370612131b6e0756/bltac8f391d0103a449/5f7f713befdbc80efd0707f5/drmundo_ability_ult_1_1.mp4"></video>
+                </div>
+            </div>
+            
+            <div class="build">
+                <h4>
+                    CONFIGURACIÓN
+                </h4>
+                <div class="items">
+                    <h5>
+                        OBJETOS
+                    </h5>
+                    <ul>
+                        <li>
+                            <img src="../items/sunfirecape.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Égida de Fuego Solar</h2><span>3000</span>
+                                </div>
+                                
+                                <h4><span>+500</span> Vida Máxima</h4>
+                                <h4><span>+15</span> Aceleración de Habilidad</h4>
+                                
+                                <p>
+                                    INMOLAR: Inflige 16-25 de daño mágico + un 0.8% de Vida adicional por segundo a enemigos cercanos. Dañar campeones o monstruos épicos con Inmolar aumenta su daño en un 8% por 5 seg. Se acumula hasta 6 veces. <br>
+                                    TOQUE LLAMEANTE: Al tener el máximo de acumulación de Inmolar, los ataques queman a los enemigos cercanos con el daño de Inmolar durante 3 seg. <br>
+                                    Inmolar inflige 125% de daño a súbditos y montruos.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../items/warmogsarmor.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Armadura de Warmog</h2><span>2850</span>
+                                </div>
+                                
+                                <h4><span>+700</span> Vida Máxima</h4>
+                                <h4><span>+200%</span> Regeneración de Vida</h4>
+                                <h4><span>+10</span> Aceleración de Habilidad</h4>
+                                
+                                <p>
+                                    CORAZÓN DE WARMOG: Si tienes al menos 950 de Vida Máxima, restaura un 5% de tu Vida por seg si no has recibido daño dentro de los últimos 6 seg.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../items/spiritvisage.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Apariencia Espiritual</h2><span>2900</span>
+                                </div>
+                                
+                                <h4><span>+350</span> Vida Máxima</h4>
+                                <h4><span>+100%</span> Regeneración de Vida</h4>
+                                <h4><span>+45</span> Resistencia Mágica</h4>
+                                <h4><span>+10</span> Aceleración de Habilidad</h4>
+                                
+                                <p>
+                                    BENDITO: Aumenta todos los efectos de curación, regeneración y de drenar sobre ti mismo en un 30%.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../items/thornmail.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Cota de Espinas</h2><span>2900</span>
+                                </div>
+                                
+                                <h4><span>+200</span> Vida Máxima</h4>
+                                <h4><span>+75</span> Armadura</h4>
+                                
+                                <p>
+                                    ESPINAS: Recibir un ataque refleja 25 de daño mágico +10 de armadura adicional al atacante e inflige un 40% de Heridad Graves por 3 seg si es un campeón. Inmovilizar campeones enemigos también inflige un 60% de Heridas Graves por 3 seg. <br>
+                                    <br>
+                                    Heridas Graves reduce la efectividad de las curaciones y efectos regenerativos.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../items/deadmansplate.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Placa del Hombre Muerto</h2><span>2800</span>
+                                </div>
+                                
+                                <h4><span>+250</span> Vida Máxima</h4>
+                                <h4><span>+50</span> Armadura</h4>
+                                
+                                <p>
+                                    IMPLACABLE: +5% de Velocidad de Movimiento. <br>
+                                    IMPULSO: Moverte genera impulso, lo que otorga hasta 50 de Velocidad de Movimiento al llegar a 100 acumulaciones. Atacar elimina todas las acumulaciones de Impulso. Las acumulaciones decaen cuando se afecta la velocidad de movimiento. <br>
+                                    GOLPE APLASTANTE: Los ataques infligen hasta 100 de daño mágico adicional según el Impulso consumido. Los ataques cuerpo a cuerpo con el máx. de Impulso ralentizan un 50% durante 1 seg.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../items/mercurystreads.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Botas de Mercurio</h2><span>1000</span>
+                                </div>
+                                
+                                <p>
+                                    CALZADO: +40 de Velocidad de Movimiento. <br>
+                                    MEJORADO: +10 de Resistencia Mágica. <br>
+                                    TENACIDAD: Reduce la duración de aturdimientos, ralentizaciones, provocaciones, miedo, silencio, ceguera e inmovilizaciones un 35%. <br>
+                                    CARRERA (ACTIVA): Aumenta la Velocidad de Movimiento un 15% durante 3 seg. Infligir o recibir daño de campeones desactiva los efectos de Carrera. (60 seg de enfriamiento).
+                                </p>
+                            </div>
+                        </li>
+                        <li class="build-icon">
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </li>
+                        <li>
+                            <img src="../items/gargoyleenchant.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Encantamiento de Gárgola</h2><span>500</span>
+                                </div>
+                                
+                                <p>
+                                    ARMADURA PÉTREA (ACTIVA): Aumenta tu Vida un 65% y reduce el daño que infliges un 60% durante 4 seg. Si hay 3 o más héroes enemigos cerca, aumenta tu Vida en un 130%. (45 seg de enfriamiento).
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="runes">
+                    <h5>
+                        RUNAS Y HECHIZOS
+                    </h5>
+                    <ul>
+                        <li>
+                            <img src="../runes/fleetfootwork.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Sobre la Marcha</h2>
+                                </div>
+                                
+                                <p>
+                                    Al atacar, moverte y lanzar habilidades, juntas acumulaciones de Energía. Al llegar a 100 acumulaciones, tu siguiente ataque te curará y te otorgará velocidad de movimiento aumentada. <br>
+                                    CURACIÓN: 15 - 85 (basado en nivel) + 30% adicional Daño de Ataque + 30% adicional Poder de Habilidad. <br>
+                                    VELOCIDAD DE MOVIMIENTO ADICIONAL: 20% durante 1 seg. <br>
+                                    En campeones a distancia, cura un 30% al atacar súbditos.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../runes/weakness.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Fragilidad</h2>
+                                </div>
+                                
+                                <p>
+                                    Reducir el movimiento de campeones enemigos hará que reciban un 5% de daño adicional durante los siguientes 5 seg.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../runes/huntertitan.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Cazador: Titán</h2>
+                                </div>
+                                
+                                <p>
+                                    Obtienes 20 de Vida Máxima. Los derribos de campeones únicos otorgan 20 de Vida Máxima Y 4% de Tenacidad.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../runes/packhunter.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Cazador de Manada</h2>
+                                </div>
+                                
+                                <p>
+                                    Obtienes 2% de Velocidad de Movimiento al estar cerca de campeones aliados. Por cada aliado único con el que participes en un derribo, obtienes 50 de oro y el aliado 50 de oro.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <img src="../spells/SummonerSmite.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Castigo</h2>
+                                </div>
+                                
+                                <p>
+                                    Enfriamiento: 10 seg <br>
+                                    Inflige 440 de daño verdadero (440-1000) a un monstruo épico o grande, o a un súbdito. Usar Castigo sobre monstruos restaurará 70 de Vida (70 + 10%). Matar a 4 monstruos grandes mejora Castigo a Castigo Devastador o Catigo Desafiante, que puede utilizarse sobre campeones enemigos. <br>
+                                    Permiso para Cazar: Obtienes un 20% de experiencia adicional de monstruos de la jungla de forma permanente, pero obtienes un 20% menos de oro y experiencia de súbditos de forma temporal. <br>
+                                    Diente y Uña: Inflige un 10% más de daño mágico y te restauran 30 de Vida durante 5 seg. <br>
+                                    <br>
+                                    Obtiene un carga cada 45 seg, hasta un máximo de 2.
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="../spells/SummonerFlash.png" alt="">
+                            <div class="information">
+                                <div class="item">
+                                    <h2>Destello</h2>
+                                </div>
+                                
+                                <p>
+                                    ENFRIAMIENTO: 150 seg. <br>
+                                    Te teletransportas una distancia corta hacia delante o hacia la dirección objetivo.
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="how-to-play">
+                <h2>
+                    CÓMO JUGAR DIANA
+                </h2>
+                <p>
+                    Diana es una asesina de daño mágico del carril central. Diana es una campeona cuerpo a cuerpo y puede luchar mucho al principio del juego (especialmente contra campeones a distancia) cuando intenta caminar hasta los últimos súbditos golpeados. Una vez que llegues al nivel 5 y obtengas Moonfall (Ultimate), puedes buscar vagar por el mapa con su estilo de juego agresivo. Lunar Rush (tercera habilidad) es una habilidad de carrera y se puede usar para atacar a los campeones enemigos y luego puedes usar tu habilidad definitiva para infligir una gran cantidad de daño.
+                </p>
+            </div>
+            
+            <div class="footer">
+                <div class="footerleft">
+                    <p class="copyrightText">© 2019-2020 Riot Games, Inc. RIOT GAMES, LEAGUE OF LEGENDS: WILD RIFT y todas las imágenes o videos referentes al videojuego son propiedad de Riot Games, Inc.</p>
+                    <p class="madeBy">Hecho por: Martín Sepúlveda. <a href="https://www.instagram.com/martin07.22/"><ion-icon name="logo-instagram"></ion-icon></a></p>
+                </div>
+                <ul class="sci">
+                    <li><a href="https://www.facebook.com/wildriftLATAM"><ion-icon name="logo-facebook"></ion-icon></a></li>
+                    <li><a href="https://twitter.com/wildriftLATAM"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                    <li><a href="https://www.instagram.com/wildriftlatam/"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCZryWLpEaW1T40CWjiYIXAQ"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="champ.js"></script>
+    <script src="../tabs.js"></script>
+    <script src="../nav.js"></script>
+    <script src="../typed.min.js"></script>
+    <script type="text/javascript">
+        var typed = new Typed(".typing", {
+            strings: ["DR. MUNDO", "EL LOCO DE ZAUN"],
+            typeSpeed: 100,
+            backSpeed: 60,
+            loop: true
+        });
+    </script>
+</body>
+</html>

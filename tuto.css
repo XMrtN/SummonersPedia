@@ -1,0 +1,134 @@
+body {
+    background-image: url(walls/Jinx.jpg);
+    background-size: cover;
+    background-position: 42% center;
+    background-attachment: fixed;
+}
+
+.description {
+    font-size: 1.1em;
+    color: var(--black);
+    transition: .3s;
+}
+
+.objective {
+    margin: 50px 0;
+    font-size: 2.5em;
+    text-align: center;
+    font-style: italic;
+    color: var(--black);
+    transition: .3s;
+}
+
+.swiper {
+    max-width: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.swiper-slide img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide .info {
+    padding: 0 20px 40px;
+}
+
+.swiper-slide h4 {
+    font-weight: 600;
+    text-align: center;
+    color: var(--black);
+    transition: .3s;
+}
+
+.swiper-slide p {
+    color: var(--black);
+    transition: .3s;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    top: 40% !important;
+    color: #fff !important;
+}
+
+.champ {
+    margin: 50px 0;
+    font-size: 2.5em;
+    text-align: center;
+    font-style: italic;
+    color: var(--black);
+    transition: .3s;
+}
+
+.lbl-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-radius: 8px;
+    transition: .3s;
+}
+
+.lbl-menu li {
+    margin: 0 0 20px;
+    color: var(--black);
+    text-align: center;
+    border-radius: 40px;
+    font-weight: 500;
+    cursor: url(hand.png), auto;
+    opacity: .8;
+    transition: .3s;
+}
+
+.lbl-menu li:hover {
+    transform: scale(1.1);
+}
+
+.lbl-menu li.active {
+    opacity: 1;
+}
+
+.lbl-menu span {
+    position: relative;
+    display: block;
+    padding: 0 20px;
+    cursor: url(hand.png), auto;
+}
+
+.lbl-menu img {
+    cursor: url(hand.png), auto;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: flex;
+}
+
+.tab-content div {
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content p {
+    font-size: 1.1em;
+    color: var(--black);
+    transition: .3s;
+}

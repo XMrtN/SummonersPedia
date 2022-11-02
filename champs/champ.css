@@ -1,0 +1,350 @@
+body {
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.background .video {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.background .video > video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.background .video.hidden > video {
+    display: none;
+}
+
+.background .video > .title {
+    z-index: 1;
+}
+
+.imgBtn {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 15vh;
+    right: 40px;
+    z-index: 10;
+    transition: .3s;
+}
+
+.imgBtn ion-icon {
+    font-size: 2em;
+    color: #fff;
+}
+
+.imgBtn ion-icon:nth-child(2),
+.imgBtn.active ion-icon:nth-child(1) {
+    display: none;
+}
+
+.imgBtn.active ion-icon:nth-child(2) {
+    display: block;
+}
+
+.des-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.description {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-image: linear-gradient(45deg, #00c6ff, #009dff);
+    font-size: 1.4em;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.description:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 4px;
+    background: rgba(0, 0, 0, 0.15);
+    transform: translate(-50%, 0);
+}
+
+.rol,
+.difficult {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 20px 40px;
+    width: 50%;
+    text-align: center;
+}
+
+.rol img {
+    width: 40px;
+    height: 40px;
+}
+
+.abilities {
+    margin-top: 50px;
+    font-size: 2.5em;
+    text-align: center;
+    font-style: italic;
+    color: var(--black);
+    transition: .3s;
+}
+
+.lbl-menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 15px;
+}
+
+.lbl-menu li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    margin: 5px 10px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: url(../hand.png), auto;
+    opacity: .8;
+    transition: .3s;
+}
+
+.lbl-menu li img {
+    width: 100%;
+    cursor: url(../hand.png), auto;
+    transition: .3s;
+}
+
+.lbl-menu li:hover {
+    transform: scale(1.1);
+}
+
+.lbl-menu li.active {
+    opacity: 1;
+}
+
+[data-tab-content] {
+    display: none;
+}
+
+.active[data-tab-content] {
+    display: flex;
+}
+
+.tab-content > div {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content video {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    object-fit: cover;
+}
+
+.tab-content .ability-description {
+    margin: 20px;
+    min-width: 200px;
+    color: var(--black);
+    transition: .3s;
+}
+
+.build > h4 {
+    margin-top: 50px;
+    font-size: 2.5em;
+    text-align: center;
+    font-style: italic;
+    color: var(--black);
+    transition: .3s;
+}
+
+.build > div > h5 {
+    font-size: 1.3em;
+    text-align: center;
+    font-style: italic;
+    color: var(--black);
+    transition: .3s;
+}
+
+.build .items,
+.build .runes {
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.build ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.build li {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    width: 60px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.build li:hover {
+    border: 0 solid rgba(0, 0, 0, 0);
+}
+
+.build li img {
+    width: 100%;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.build .build-icon {
+    margin: -5px;
+    width: auto;
+    border: none;
+    background: transparent;
+}
+
+.build .build-icon ion-icon {
+    cursor: url(../default.png), auto;
+    color: #009dff;
+    font-size: 1.5em;
+}
+
+.build .information {
+    position: absolute;
+    width: 400px;
+    padding: 10px;
+    color: var(--black);
+    background: var(--white);
+    border: 4px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    transition: opacity .1s,
+                transform .1s;
+    visibility: hidden;
+    transform: scale(0.6);
+    opacity: 0;
+    z-index: 100;
+}
+
+.build .active {
+    visibility: visible;
+    transform: scale(1);
+    opacity: 1;
+}
+
+.information .item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: var(--black);
+    transition: .3s;
+}
+
+.information .item > span {
+    background-image: linear-gradient(45deg, #ffc837, #ffba00);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.information h4 {
+    text-align: start;
+    margin: 0;
+    font-size: .8em;
+    color: var(--black);
+    transition: .3s;
+}
+
+.information h4 span {
+    background-image: linear-gradient(45deg, #00c6ff, #009dff);
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 1em;
+}
+
+.information p {
+    margin: 0;
+    font-size: .8em;
+    color: var(--black);
+    transition: .3s;
+}
+
+.how-to-play h2 {
+    margin-top: 50px;
+    font-size: 2em;
+    font-style: italic;
+    color: var(--black);
+    transition: .3s;
+}
+
+.how-to-play p {
+    font-size: 1.1em;
+    color: var(--black);
+    transition: .3s;
+}
+
+@media (max-width: 1110px) {
+    .imgBtn {
+        bottom: 40px;
+        right: 20px;
+    }
+}
+
+@media (max-width: 858px) {
+    .lbl-menu ul {
+        justify-content: center;
+    }
+    
+    .active[data-tab-content] {
+        flex-direction: column-reverse;
+    }
+    
+    .description {
+        display: block;
+    }
+    
+    .description:after {
+        height: 0;
+        width: 0;
+    }
+    
+    .rol,
+    .difficult {
+        width: 100%;
+    }
+}
